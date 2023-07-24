@@ -14,7 +14,16 @@ listEditRouter.post('/', (req, res) => {
 // Ruta para eliminar una tarea por su ID
 listEditRouter.delete('/:id', (req, res) => {
   const taskId = req.params.id;
-  taskController.deleteTask(taskId);
+
+  const tarea = taskController.getTaskById(taskId);
+ 
+  if (tarea) {
+    taskController.deleteTask(taskId);
+    res.json({ message: `Tarea con ID ${taskId} eliminada.` });
+  } else {
+    res.json({ message: `Tarea con ID ${taskId} NO ENCONTRADA PARA ELIMINARLA` });
+  }
+  
   res.json({ message: `Tarea con ID ${taskId} eliminada.` });
 });
 
