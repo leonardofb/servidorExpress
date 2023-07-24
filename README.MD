@@ -1,4 +1,4 @@
-##Resumen de clase servidores y Libreria EXPRESS
+##Resumen de clase servidores y Librería EXPRESS
 ## TENER EN CUENTA QUE SON METODOS CRUD
 
 * create - POST
@@ -6,24 +6,24 @@
 * Updata - PUT
 * Delete - DELETE
 
-# GET: Estoy comnicandome con la intecion de obtener informacion
-*no tienen Body
- Elenvio de la ingformacion se realiza atravez de la url
+# GET: Estoy comunicándome con la intención de obtener información
+* No tienen Body
+ El envió de la información se realiza a través de la url
  Path Params: Para indicar un recurso especifico
  Query Params: para indicar un recurso en especifico 
  acciones de filtrado
 *Ejemplo
 * /users                 o           /user/id
 
-# POS -> Estoy realizando na solicitud para insercion de datos en la BD
+# POS -> Estoy realizando una solicitud para inserción de datos en la BD
 * data: Body
 * {
-*    key:value,
+*    key: value,
 *   name: nombre
 * }
 
-# PUT -> Realizar cambios en registros ya existentes el la base dedatos
-actualiza la informacion 
+# PUT -> Realizar cambios en registros ya existentes el la base de datos
+actualiza la información 
 Le puede realizar una solicitud y la cargo con una data: body
 data: Body
 
@@ -31,7 +31,7 @@ data: Body
  A data viaja atravez de la url
 * Ejemplo
 * /user/id
-* /users?filter=activos == envio informacion para poder filtrarlos en el codigo
+* /users?filter=activos == envió información para poder filtrarlos en el código
 
 ## METODOS DE ENRUTAMIENTO EN EXPRESS
 
@@ -57,3 +57,6 @@ Es importante tener en cuenta que Express también proporciona métodos de enrut
 como 
 * app.all() para manejar todos los métodos de solicitud y 
 * app.use() para aplicar middleware a una ruta o a toda la aplicación. Estos métodos ofrecen flexibilidad adicional para personalizar el manejo de las solicitudes en tu aplicación Express.
+la pas amigo mio.
+
+
