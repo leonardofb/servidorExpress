@@ -59,4 +59,6 @@ como
 * app.use() para aplicar middleware a una ruta o a toda la aplicación. Estos métodos ofrecen flexibilidad adicional para personalizar el manejo de las solicitudes en tu aplicación Express.
 la pas amigo mio.
 
+Gracias
+Leonardo Fierro - Cohorte18 - Protalento
 

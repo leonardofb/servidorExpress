@@ -20,3 +20,6 @@ usando la ruta http://localhost:8080/tasks/2  hay que tener encuenta que la tare
 usando la ruta http://localhost:8080/tasks/2 hay que tener encuenta que la tareas ha DELETE se envia por la ruta con id (2) como en este ejemplo encaso de no existir el id se monstrara en pantalla la no existencia
 
 Los usuarios utilizarían estas funcionalidades para mantenerse organizados, mejorar su productividad y llevar un control de sus responsabilidades diarias. La aplicación les proporciona una manera sencilla y eficiente de administrar sus tareas, lo que les permite concentrarse en las actividades más importantes y alcanzar sus metas de manera más efectiva.
+
+Gracias
+Leonardo Fierro - Cohorte18 - Protalento
