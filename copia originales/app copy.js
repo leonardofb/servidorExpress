@@ -1,3 +1,4 @@
+//app.js
 // app.js
 const express = require('express');
 const app = express();
@@ -6,23 +7,7 @@ const listViewRouter = require('./list-view-router');
 const listEditRouter = require('./list-edit-router');
 const taskController = require('./taskController');
 
-
 app.use(express.json());
-
-// Middleware para validar los métodos HTTP permitidos
-function validateAllowedMethods(req, res, next) {
-  const allowedMethods = ['GET', 'POST', 'PUT', 'DELETE'];
-  const method = req.method.toUpperCase();
-
-  if (!allowedMethods.includes(method)) {
-    return res.status(405).json({ error: 'Método HTTP no permitido.' });
-  }
-
-  next();
-}
-
-// Aplicar el middleware a nivel de aplicación
-app.use(validateAllowedMethods);
 
 
 app.use('/tasks', listViewRouter);
