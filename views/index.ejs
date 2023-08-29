@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="recursos/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>PROBANDO LISTA DE TAREAS CON TOKEN</h1>
+    <img src="recursos/img/pro-talento-logo.png">
+
+    <form id="authForm">
+        <button type="button" onclick="redirectTo('/register')">Registrarse</button>
+        <button type="button" onclick="redirectTo('/login')">Iniciar sesión</button>
+    </form>
+
+    <script>
+        function redirectTo(route) {
+            window.location.href = route;
+        }
+    </script>
+</body>
+</html>

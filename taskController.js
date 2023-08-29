@@ -15,8 +15,8 @@ function getAllTasks() {
 }
 
 function getCompletedTasks() {
-  return Object.values(taskDatabase).filter(task => task.isCompleted);
-}
+          return Object.values(taskDatabase).filter(task => task.isCompleted);
+  }
 
 function getIncompleteTasks() {
   return Object.values(taskDatabase).filter(task => !task.isCompleted);
